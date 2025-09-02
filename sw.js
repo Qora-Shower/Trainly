@@ -1,4 +1,4 @@
-const CACHE_NAME = "Trainly-V1";
+const CACHE_NAME = "Trainly-V2";
 const BASE = "/Trainly/";
 
 self.addEventListener('install', (event) => {
