@@ -2,24 +2,194 @@ body {
   font-family: sans-serif;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   margin: 0;
-  overflow: hidden;
-  background: #464646;
+  background: #F2f4f6;
+  gap: 10px;
+}
+
+.cont1 {
+  background: #fff;
+  width: 100vw;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 90vw;
+  height: 200px;
+  border-radius: 10px;
+  background: #A4A4A4;
+  position: relative;
+  background-image: 
+  url("images/bild.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+}
+
+.label {
+  font-weight: 500;
+  height: 25px;
+  padding: 0px 12px 0px 12px;
+  border-radius: 5px;
+  right: 0;
+  position: absolute;
+  background:#C00000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.cont2 {
+  background: #fff;
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indi {
+  width: 45px;
+  height: 5px;
+  border-radius: 25px;
+  background: #898989;
+}
+
+.red-indi {
+  background: #CF0000;
+}
+
+.cont3 {
+  overflow-x: auto;
+  gap: 10px;
+  background: #fff;
+  width: 100vw;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .btn {
-  width: 80vw;
-  height: 75px;
-  background: #313131;
-  border-radius: 15px;
-  border: 1px solid #D0D0D0;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 45px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.linie {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 3px;
+  background: #CF0000;
 }
 
 .btn:hover {
-  outline-offset: 4px;
-  outline: 2px solid #0088FF;
-  border: 3px solid #FFA36A;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.cont4 {
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.btn-big {
+  width: 90vw;
+  height: 275px;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-btn1 {
+  width: 90vw;
+  height: 150px;
+  background-image: 
+  url("images/bild.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+}
+
+.img-btn2 {
+  width: 90vw;
+  height: 150px;
+  background-image: 
+  url("images/bild2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+}
+
+.img-btn3 {
+  width: 90vw;
+  height: 150px;
+  background-image: 
+  url("images/bild3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+}
+
+.mitte {
+  width: 90vw;
+  height: 60px;
+  color: #212121;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.label2 {
+  font-weight: 500;
+  height: 25px;
+  padding: 0px 12px 0px 12px;
+  border-radius: 5px;
+  bottom: 0;
+  position: absolute;
+  background: #167600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.discord {
+  background: #002C74;
+}
+
+.roblox {
+  background: #006CFF;
 }
