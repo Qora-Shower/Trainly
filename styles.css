@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: #464646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 80vw;
+  height: 75px;
+  background: #313131;
+  border-radius: 15px;
+  border: 1px solid #D0D0D0;
+}
+
+.btn:hover {
+  outline-offset: 4px;
+  outline: 2px solid #0088FF;
+  border: 3px solid #FFA36A;
+}
