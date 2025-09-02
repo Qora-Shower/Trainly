@@ -1,5 +1,5 @@
-const CACHE_NAME = "DB-V1";
-const BASE = "Deutsche-Bahn-Roblox/";
+const CACHE_NAME = "Trainly-V1";
+const BASE = "/Trainly/";
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

@@ -3,14 +3,14 @@
   "name": "[Roblox] Trainly",
   "short_name": "Trainly",
   "description": "Your Roblox DB Agent on Rail ;)",
-  "start_url": "/Deutsche-Bahn-Roblox/",
+  "start_url": "/Trainly/",
   "background_color": "#212121",
   "theme_color": "#212121",
   "orientation": "any",
   "display": "standalone",
   "icons": [
   {
-    "src": "/Deutsche-Bahn-Roblox/icon512.png",
+    "src": "/Trainly/icon512.png",
     "sizes": "512x512",
     "type": "image/png"
   }
