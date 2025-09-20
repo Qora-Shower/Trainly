@@ -4,7 +4,6 @@ body {
   background: #F2F4F6;
   margin: 0;
   overflow: hidden;
-  overflow-y: hidden;
 }
 
 .nav {
@@ -13,7 +12,9 @@ body {
   background: #fff;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  top: 0;
+  position: fixed;
+  padding-left: 15px;
 }
 
 .i-btn {
@@ -39,11 +40,77 @@ body {
 
 .img {
   width: 100vw;
-  height: 200px;
+  height: 250px;
   background: #eee;
   background-image: 
   url("images/bild.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;;
+}
+
+.cont2 {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.label {
+  font-weight: 500;
+  border-radius: 5px;
+  position: absolute;
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.name {
+  padding: 0px 12px 0px 12px;
+  left: 0;
+  height: 25px;
+  margin-left: 15px;
+  background: #167600;
+}
+
+.share {
+  padding: 0px 8px 0px 8px;
+  right: 0;
+  height: 32px;
+  margin-right: 15px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.i-share {
+  width: 20px;
+  height: 20px;
+  stroke-width: 3px;
+  color: #212121;
+}
+
+.cont3 {
+  width: 100vw;
+  height: 18px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #7E7E7E;
+}
+
+.heading {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.h2 {
+  width: 90vw;
+  height: 50px;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 20px;
 }

@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #F2F4F6;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 18px;
+  width: 100vw;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  justify-content: center;
+}
+
+.i-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  position: fixed;
+  margin-left: 15px;
+}
+
+.i {
+  width: 20px;
+  height: 20px;
+  stroke-width: 3px;
+  color: #212121;
+}
+
+.i-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  outline: 2px solid #212121;
+}
+
+.cont2 {
+  margin-top: 55px;
+  width: 100vw;
+  height: 75px;
+  padding-left: 15px;
+}
+
+.inline-cont2 {
+  width: 85vw;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.inline {
+  width: 85vw;
+  height: 10px;
+  padding-left: 15px;
+}
+
+.i-inline-cont2 {
+  width: 20px;
+  height: 20px;
+  color: #212121;
+  stroke-width: 3px;
+}
+
+.l {
+  padding-left: 8px;
+  font-weight: 900;
+}
+
+.vertical {
+  margin-left: -6px;
+  width: 2px;
+  height: 10px;
+  background: #212121;
+}

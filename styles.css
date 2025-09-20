@@ -20,7 +20,7 @@ body {
 }
 
 .img {
-  width: 90vw;
+  width: 325px;
   height: 200px;
   border-radius: 10px;
   background: #A4A4A4;
@@ -118,7 +118,7 @@ body {
 }
 
 .btn-big {
-  width: 90vw;
+  width: 325px;
   height: 275px;
   border-radius: 10px;
   background: #fff;
@@ -127,7 +127,7 @@ body {
 }
 
 .img-btn1 {
-  width: 90vw;
+  width: 325px;
   height: 150px;
   background-image: 
   url("images/bild.jpg");
@@ -137,7 +137,7 @@ body {
 }
 
 .img-btn2 {
-  width: 90vw;
+  width: 325px;
   height: 150px;
   background-image: 
   url("images/bild2.jpg");
@@ -147,7 +147,7 @@ body {
 }
 
 .img-btn3 {
-  width: 90vw;
+  width: 325px;
   height: 150px;
   background-image: 
   url("images/bild3.jpg");
@@ -157,7 +157,7 @@ body {
 }
 
 .mitte {
-  width: 90vw;
+  width: 325px;
   height: 60px;
   color: #212121;
   display: flex;
@@ -176,7 +176,7 @@ body {
   border-radius: 5px;
   bottom: 0;
   position: absolute;
-  background: #167600;
+  background: #23AF03;
   display: flex;
   justify-content: center;
   align-items: center;

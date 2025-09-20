@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="reise.css">
+  <title></title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="btn-nav">
+    <i class="i" data-lucide="arrow-big-right-dash"></i>
+    Verbindungen
+    <div class="indi"></div>
+    </div>
+    <div class="btn-nav"><i class="i" data-lucide="list"></i>Abfahrt<div class="indi" style="display: none;"></div></div>
+  </nav>
+  
+  <div class="cont1">
+    <div class="input">
+      <i class="i-input" data-lucide="circle-dot"></i>
+      <input type="text" placeholder="From" class="text">
+    </div>
+    
+    <div class="input">
+      <i class="i-input" data-lucide="map-pin"></i>
+      <input type="text" placeholder="To" class="text">
+    </div>
+    
+    <div class="input">
+      <i class="i-input" data-lucide="book-up"></i>
+      <div class="text">Select a Server</div>
+      <i class="i-input" data-lucide="chevron-down"></i>
+    </div>
+  </div>
+  
+  <script>
+    lucide.createIcons()
+  </script>
+</body>
+
+</html>
