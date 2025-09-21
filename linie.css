@@ -1,0 +1,142 @@
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #F2F4F6;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 18px;
+  width: 100vw;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  justify-content: center;
+}
+
+.i-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  position: fixed;
+  margin-left: 15px;
+}
+
+.i {
+  width: 20px;
+  height: 20px;
+  stroke-width: 3px;
+  color: #212121;
+}
+
+.i-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  outline: 2px solid #212121;
+}
+
+.cont2 {
+  margin-top: 55px;
+  width: 100%;              /* statt 100vw */
+  max-width: 100%;          /* Container darf nicht breiter werden */
+  height: 625px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;   /* Kinder untereinander */
+  overflow-x: hidden;       /* kein seitliches Scrollen */
+  overflow-y: auto;         /* nur nach unten scrollbar wenn nötig */
+  box-sizing: border-box;   /* Padding & Border werden mitgerechnet */
+  gap: 50px;
+}
+
+.station {
+  width: 340px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+}
+
+.time {
+  width: 50px;
+  height: 30px;
+}
+
+.i2 {
+  width: 13px;
+  height: 13px;
+  stroke-width: 4px;
+  color: #848484;
+  fill: #fff;
+}
+
+.i3 {
+  width: 13px;
+  height: 13px;
+  stroke-width: 3.5px;
+  color: #212121;
+  fill: #fff;
+}
+
+.platform {
+  height: 23px;
+  background: #02084D;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan {
+  font-size: 16px;
+  color: #848484;
+}
+
+.vsl {
+  font-size: 16px;
+  color: #047D03;
+  font-weight: 500;
+}
+
+.Name {
+  font-size: 16px;
+  color: #848484;
+}
+
+.verlauf {
+  width: 4px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 75px;
+  left: 0;
+  position: absolute;
+  margin-top: 47px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.automaticVerlauf {
+  width: 4px;
+  background: #212121;
+}
