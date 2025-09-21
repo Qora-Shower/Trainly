@@ -22,36 +22,78 @@
   
   <div class="cont2">
     <div id="position" class="verlauf"></div>
-    
-    <div id="Magdeburg Hbf" class="station">
-      <div class="time">
-        <div id="plan" class="plan">17:17</div>
-        <div id="vsl" class="vsl">17:17</div>
-      </div>
-      <i id="StartAndEnd" class="i3" data-lucide="circle-dot"></i>
-      
-      <p id="Name" class="Name">Magdeburg Hbf</p>
-      
-      <div id="plat" class="platform">Gl. 2</div>
-    </div>
-    
-    <div id="Magdeburg Neustadt" class="station">
-      <div class="time">
-        <div class="plan">17:20</div>
-        <div class="vsl" style="color: #ff0000;">17:24</div>
-      </div>
-      <i class="i2" data-lucide="circle"></i>
-      
-      <p class="Name">Magdeburg Neustadt</p>
-      
-      <div class="platform" style="background: none; color: #212121;">Gl. 3</div>
-    </div>
-    
-  </div>
   
   <script>
     lucide.createIcons()
   </script>
+
+ <div id="train-container"></div>
+
+<script>
+async function renderTrain(trainName) {
+    try {
+        const response = await fetch(`http://localhost:3000/train/${trainName}`);
+        const data = await response.json();
+        const stations = data.stations;
+
+        const container = document.getElementById('train-container');
+        container.innerHTML = ''; // vorher leeren
+
+        stations.forEach((station, index) => {
+            // Icon, Farben und Platform-Style bestimmen
+            let iconClass, iconLucide, textColor, platStyle;
+
+            if (index === 0) { // Startstation
+                iconClass = 'i3';
+                iconLucide = 'circle-dot';
+                textColor = '#fff';
+                platStyle = 'background:#02084D;color:#fff;';
+            } else if (index === stations.length - 1) { // Endstation
+                iconClass = 'i3';
+                iconLucide = 'map-pin';
+                textColor = '#fff';
+                platStyle = 'background:#02084D;color:#fff;';
+            } else { // Zwischenstationen
+                iconClass = 'i2';
+                iconLucide = 'circle';
+                textColor = station.changes > 0 ? '#FF0000' : '#212121';
+                platStyle = 'background:none;color:' + textColor + ';';
+            }
+
+            // Fallbacks für Startstation
+            const abfahrt = station.abfahrt || "--:--";
+            const vsl = station.vsl || "--:--";
+            const name = station.name || "Unbekannt";
+
+            // HTML für die Station erstellen
+            const stationDiv = document.createElement('div');
+            stationDiv.id = station.name;
+            stationDiv.className = 'station';
+            stationDiv.innerHTML = `
+                <div class="time">
+                    <div class="plan" style="color:${textColor}">${abfahrt}</div>
+                    <div class="vsl" style="color:${textColor}">${vsl}</div>
+                </div>
+                <i class="${iconClass}" data-lucide="${iconLucide}" style="color:${textColor}"></i>
+                <p class="Name" style="color:${textColor}">${name}</p>
+                <div class="platform" style="${platStyle}">Gl. ${station.gleis}</div>
+            `;
+
+            container.appendChild(stationDiv);
+        });
+
+    } catch (err) {
+        console.error("Fehler beim Laden der Zugdaten:", err);
+    }
+}
+
+// Beispiel: RE13 laden
+renderTrain('RE13');
+
+
+</script>
+
+
 </body>
 
 </html>
